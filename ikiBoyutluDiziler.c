@@ -12,10 +12,13 @@ int ch[2][3];
   ch[1][1] = 5;
   ch[1][2] = 6;
 
+int rows = sizeof(ch)/sizeof(ch[0]));
+int coloumns = sizeof(ch)/sizeof(ch[0][0]);
+  
 
-for(int i = 0;i<2;i++){
+for(int i = 0;i<rows;i++){
 
-  for(int j = 0;j<3;j++){
+  for(int j = 0;j<coloumns;j++){
 
     printf("%d\n",ch[i][j]);
   }
